@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+  	android:background="@color/white"
+  	android:paddingTop="10dp"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         >
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/_refresh_waiting_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/animaition01"
+             />
+
+        <viewpager.lingdian.com.viewpagerdouble.view.WaitingView
+            android:id="@+id/_refresh_waiting"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:visibility="gone"
+           	android:textColor="#c0c0c0"
+            android:textSize="12sp"
+            android:id="@+id/update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/_refresh_waiting"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/_refresh_waiting"
+            android:textColor="#c0c0c0"
+            android:textSize="9sp"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>
