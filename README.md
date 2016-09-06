@@ -1,0 +1,3 @@
+# viewpager_fragment_viewpager_fragment
+viewpager嵌套fragment里其中一个fragment在嵌套viewpager+fragmeng,和上下拉刷新
+简单就是activity-viewpager-4个fragment-viewpager-4个fragment-viewpager-若干个fragment，详细介绍在
